@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFF9F1">
+<title>Word Nice</title>
+<meta name="description" content="A gentle word game for iPhone and iPad.">
+<meta name="robots" content="noindex">
+<!-- GitHub Pages serves this for a missing path at any depth, including shared
+     family links (/family/42) opened without the app, so every asset and link
+     must be root-relative. -->
+<link rel="icon" href="/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <main class="notfound">
+    <img class="otter" src="/images/otter.png" width="353" height="281" alt="">
+    <h1 id="title">Nobody’s home here.</h1>
+    <p id="body">That page isn’t here. <a href="/">Head back to Word Nice</a>.</p>
+  </main>
+
+</div>
+
+<script>
+  // A shared family link on a device without the app lands here.
+  const family = location.pathname.match(/^\/family\/(\d+)\/?$/);
+  if (family) {
+    document.title = `Family ${family[1]} · Word Nice`;
+    document.getElementById("title").textContent = `Family ${family[1]} is waiting for you.`;
+    document.getElementById("body").innerHTML =
+      'Word Nice is coming soon to iPhone and iPad. Once it’s installed, this link opens their board. <a href="/">Meet Word Nice</a>.';
+  }
+</script>
+
+</body>
+</html>

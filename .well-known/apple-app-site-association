@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["U5B2856F45.com.alanb.WordNice"],
+        "components": [{ "/": "/family/*", "comment": "A shared family, like /family/42" }]
+      }
+    ]
+  }
+}
