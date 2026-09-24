@@ -4,8 +4,7 @@
       {
         "appIDs": ["U5B2856F45.com.alanb.WordNice"],
         "components": [
-          { "/": "/family/*", "comment": "Legacy family links, like /family/42" },
-          { "/": "/", "?": { "family": "*" }, "comment": "Rich-preview family links, like /?family=42" }
+          { "/": "/family/*" }
         ]
       }
     ]
