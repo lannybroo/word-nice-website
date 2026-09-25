@@ -248,3 +248,50 @@ h2 {
   .family-copy { padding: 22px 20px 28px; }
   .family-invitation { border-radius: 20px; }
 }
+
+/* Friends with very different vocabularies. */
+.product-family {
+  display: grid;
+  grid-template-columns: minmax(240px, .85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 36px;
+  margin-top: 56px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(120deg, #FFE6EE, #EAF6FF);
+  color: #1F2D2E;
+}
+.product-family .family-eyebrow {
+  margin: 0 0 8px;
+  color: #52636A;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.product-family h2 { color: #1F2D2E; line-height: 1.15; margin: 0 0 14px; }
+.product-family .family-description { color: #52636A; margin: 0 0 14px; }
+.product-family .family-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #1F2D2E;
+  color: #fff;
+  font-weight: 700;
+}
+.product-family .family-link:focus-visible { outline: 3px solid #3A7FB0; outline-offset: 4px; }
+.family-friends { margin: 0; min-width: 0; }
+.family-portraits { display: flex; align-items: flex-end; justify-content: center; padding: 12px 8px; }
+.family-portraits img { width: 55%; max-width: 180px; border-radius: 0; height: auto; }
+.family-portraits .friend-otter { transform: rotate(8deg); position: relative; z-index: 1; }
+.family-portraits .friend-devil { width: 43%; max-width: 134px; margin-left: -16px; transform: rotate(-8deg); }
+.product-family .family-dialogue { margin-top: 12px; font-size: 13px; text-align: center; color: #52636A; }
+.family-dialogue span { display: block; }
+.family-dialogue .devil-line { color: #B83146; }
+@media (max-width: 700px) {
+  .product-family { grid-template-columns: 1fr; gap: 24px; padding: 26px 22px; }
+  .family-friends { width: min(280px, 100%); margin-inline: auto; }
+}
