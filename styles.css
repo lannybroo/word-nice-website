@@ -295,3 +295,24 @@ h2 {
   .product-family { grid-template-columns: 1fr; gap: 24px; padding: 26px 22px; }
   .family-friends { width: min(280px, 100%); margin-inline: auto; }
 }
+
+/* ---------- long-form pages (privacy, support) ---------- */
+
+.narrow { max-width: 680px; }
+
+.nav {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.nav a { color: var(--muted); }
+.nav a:hover { color: var(--accent); text-decoration: none; }
+
+.doc h1 { margin: 0 0 4px; font-size: 30px; font-weight: 700; letter-spacing: -0.02em; }
+.doc .updated { margin: 0 0 18px; font-size: 13px; color: var(--muted); }
+.doc h2 { margin-top: 22px; font-size: 21px; }
+.doc h3 { margin: 18px 0 4px; font-size: 17px; }
+.doc p { color: var(--muted); }
