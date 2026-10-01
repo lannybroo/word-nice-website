@@ -54,6 +54,5 @@ a successful website update does not refresh old message bubbles. If replacing
 an already-published image, change the image filename in both generators so
 fetchers see a new asset URL.
 
-The website still says “Coming soon,” matching the home page. At launch, update
-the generated page template's availability copy and CTA to the real App Store
-listing, then regenerate. The universal-link association file is unchanged.
+The page's button links to the App Store listing, which only resolves once the
+app is released; publish this change on launch day.
