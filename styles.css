@@ -148,6 +148,8 @@ figcaption {
 /* ---------- sections ---------- */
 
 section { padding: 56px 0 6px; }
+.lineup { margin: 0; }
+.lineup img { width: 100%; }
 
 h2 {
   margin: 0 0 14px;
