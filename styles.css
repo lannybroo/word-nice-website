@@ -163,6 +163,9 @@ figcaption {
 section { padding: 56px 0 6px; }
 .lineup { margin: 0; }
 .lineup img { width: 100%; }
+/* The small devices on the left leave the lineup's top corner empty, so on a
+   wide page the heading sits in it and the row costs less height. */
+@media (min-width: 700px) { .lineup { margin-top: calc(-11% + 10px); } }
 
 h2 {
   margin: 0 0 14px;
