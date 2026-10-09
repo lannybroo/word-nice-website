@@ -65,6 +65,19 @@ a:hover { text-decoration: underline; }
 
 .brand span { color: var(--accent); }
 
+/* A small stamp beside the wordmark: a folded iPhone Duo and two tiny lines. */
+.brand-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 22px;  }
+.brand-row .brand { margin: 0; }
+.duo-stamp {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  margin: 0; transform: rotate(-8deg);
+  font-size: 9px; font-weight: 800; line-height: 1.2;
+  letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;
+  color: var(--accent);
+}
+.duo-stamp svg { width: 34px; height: 46px; }
+.duo-stamp span { color: inherit; opacity: 0.7; }
+
 .kicker {
   margin: 12px 0 18px;
   font-size: 13px;
